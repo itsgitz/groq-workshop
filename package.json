@@ -1,0 +1,18 @@
+{
+  "name": "groq-workshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "itsgitz",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+	  "start": "tsx index.ts"
+  },
+  "dependencies": {
+    "groq-sdk": "^0.7.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "tsx": "^4.19.1"
+  }
+}
