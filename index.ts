@@ -24,8 +24,12 @@ async function getGroqChatCompletion() {
 async function main() {
   try {
     const chatCompletion = await getGroqChatCompletion()
+    const result = chatCompletion.choices[0].message.content 
+    if (!result) {
+      console.log('sorry, we currently unable to proceed your request 😔')
+    }
 
-    console.log(chatCompletion)
+    console.log(result)
   } catch (err) {
     throw err
   }
